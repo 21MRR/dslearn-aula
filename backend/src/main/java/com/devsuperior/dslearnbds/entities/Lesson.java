@@ -34,7 +34,7 @@ public abstract class Lesson implements Serializable {
 
 	@ManyToMany
 	@JoinTable(name = "tb_lessons_done", 
-	    joinColumns = @JoinColumn(name = "lesson_id "),
+	    joinColumns = @JoinColumn(name = "lesson_id"),
 	    inverseJoinColumns = {
 			@JoinColumn(name = "user_id"),
 			@JoinColumn(name = "offer_id") })
